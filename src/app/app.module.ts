@@ -7,13 +7,17 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent/*,
+    LoginComponent,
+/*,
     CursosComponent,
     CursoDetalheComponent,*/
 
@@ -22,7 +26,8 @@ import { CursosModule } from './cursos/cursos.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    CursosModule
+    CursosModule,
+    AlunosModule
   ],
   providers: [/*CursosService*/],
   bootstrap: [AppComponent]
