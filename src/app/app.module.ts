@@ -30,7 +30,7 @@ import {AuthService} from "./login/auth.service";
     NgbModule,
     //CursosModule,
     //AlunosModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [/*CursosService,*/AuthService],
   bootstrap: [AppComponent]
