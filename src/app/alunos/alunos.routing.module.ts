@@ -9,8 +9,7 @@ const alunosRoutes: Routes = [
   {path: '', component: AlunosComponent, children: [
     {path: 'novo', component: AlunoFormularioComponent},
     {path: ':id', component: AlunoDetalheComponent},
-    {path: ':id/editar', component: AlunoFormularioComponent,
-    canActivate: [AlunosDeactivateGuard]},
+    {path: ':id/editar', component: AlunoFormularioComponent},
   ]}
 ];
 

@@ -13,13 +13,13 @@ import { AlunoFormularioComponent } from '../alunos/aluno-formulario/aluno-formu
 // canDeactivate: () => any;
 // }
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class AlunosDeactivateGuard implements CanDeactivate<AlunoFormularioComponent> {
   canDeactivate(
     component: AlunoFormularioComponent,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot
   ): Observable<boolean>|Promise<boolean>|boolean {
-    return !component.podeMudarRota();
+    return component.podeMudarRota();
   }
 }

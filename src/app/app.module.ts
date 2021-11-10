@@ -13,6 +13,7 @@ import {CursosGuard} from "./guards/cursos.guard";
 import {AlunosGuard} from "./guards/alunos.guard";
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/alunos.module';
+import { AlunosDeactivateGuard } from './guards/alunos-deactivate.guard';
 
 
 
@@ -35,7 +36,11 @@ import {AlunosGuard} from "./guards/alunos.guard";
     //AlunosModule,
     FormsModule,
   ],
-  providers: [/*CursosService,*/AuthService, AuthGuard,CursosGuard,AlunosGuard,],
+  providers: [/*CursosService,*/AuthService,
+              AuthGuard,
+              CursosGuard,
+              AlunosGuard,
+              AlunosDeactivateGuard,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
