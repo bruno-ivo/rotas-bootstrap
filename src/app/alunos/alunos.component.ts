@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IFormCanDeactivate } from '../guards/iform-candeactivate';
 import {AlunosService} from "./alunos.service";
 
 @Component({
