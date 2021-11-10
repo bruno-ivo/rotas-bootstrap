@@ -6,6 +6,8 @@ import { AlunoDetalheComponent } from './aluno-detalhe/aluno-detalhe.component';
 import { AlunosRoutingModule } from './alunos.routing.module';
 import {AlunosService} from "./alunos.service";
 import { FormsModule } from '@angular/forms';
+import { AlunosDeactivateGuard } from '../guards/alunos-deactivate.guard';
+import { AlunoDetalheResolver } from './guards/aluno-detalhe.resolver';
 
 
 
@@ -23,6 +25,8 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     AlunosService,
+    AlunosDeactivateGuard,
+    AlunoDetalheResolver
 
   ]
 })
