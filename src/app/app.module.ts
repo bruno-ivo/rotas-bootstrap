@@ -14,6 +14,7 @@ import {AlunosGuard} from "./guards/alunos.guard";
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosModule } from './alunos/alunos.module';
 import { AlunosDeactivateGuard } from './guards/alunos-deactivate.guard';
+import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 
 
 
@@ -23,6 +24,7 @@ import { AlunosDeactivateGuard } from './guards/alunos-deactivate.guard';
     AppComponent,
     HomeComponent,
     LoginComponent,
+    PaginaNaoEncontradaComponent,
 /*,
     CursosComponent,
     CursoDetalheComponent,*/
