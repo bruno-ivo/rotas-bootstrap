@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CursosModule } from './cursos/cursos.module';
 import { AlunosModule } from './alunos/alunos.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,8 @@ import { AlunosModule } from './alunos/alunos.module';
     AppRoutingModule,
     NgbModule,
     CursosModule,
-    AlunosModule
+    AlunosModule,
+    FormsModule
   ],
   providers: [/*CursosService*/],
   bootstrap: [AppComponent]
